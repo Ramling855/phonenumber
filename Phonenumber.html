@@ -1,0 +1,26 @@
+<html>
+<body>
+<h2 id="for">Phone number</h2>
+
+<script type="text/javascript" >
+	function createNumber(number) {
+var str = ""
+var por1 = number.slice(0, 3);
+var part1 = por1.join("");
+str += "(" + part1[0] + part1[1] + part1[2] + ")";
+var por2 = number.slice(3, 6);
+var part2 = por2.join("");
+str += " " + part2[0] + part2[1] + part2[2] + "-";
+var por3 = number.slice(6, 11);
+var part3 = por3.join("");
+str += +part3[0] + part3[1] + part3[2] + part3[3]
+console.log(str)
+}
+createNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+createNumber([9,8,7,6,5,4,3,2,1,0])
+createNumber([2,3,4,5,6,7,8,8,9,0])
+	</script>
+</body>
+</html>
+
+ 
